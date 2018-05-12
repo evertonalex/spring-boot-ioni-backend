@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import br.com.everton.domain.Categoria;
 import br.com.everton.repositories.CategoriaRepository;
+import br.com.everton.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class CategoriaService {
@@ -16,7 +17,8 @@ public class CategoriaService {
 	
 	public Categoria buscar(Integer id) {
 		Optional<Categoria> obj = repo.findById(id);
-		return obj.orElse(null);
+		return obj.orElseThrow(() -> new ObjectNotFoundException(
+				"Objeto nao encontrado! id:" + id + ", Tipo: " + Categoria.class.getName()));
 	}
 	
 
