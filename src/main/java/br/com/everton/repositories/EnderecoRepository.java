@@ -3,9 +3,9 @@ package br.com.everton.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.everton.domain.Estado;
+import br.com.everton.domain.Endereco;
 
 @Repository
-public interface EstadoRepository extends JpaRepository<Estado, Integer>{
+public interface EnderecoRepository extends JpaRepository<Endereco, Integer>{
 	
 }
