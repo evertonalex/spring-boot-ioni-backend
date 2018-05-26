@@ -23,7 +23,7 @@ public class Estado implements Serializable{
 	private List<Cidade> cidades = new ArrayList<>();
 	
 	
-	private Estado() {
+	public Estado() {
 		
 	}
 

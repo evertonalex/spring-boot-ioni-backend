@@ -1,7 +1,6 @@
 package br.com.everton.domain;
 
 import java.io.Serializable;
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -84,9 +83,4 @@ public class Cidade implements Serializable{
 		return true;
 	}
 	
-	
-	
-	
-	
-
 }
