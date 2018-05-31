@@ -11,6 +11,7 @@ import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
 import br.com.everton.domain.Categoria;
+import br.com.everton.domain.Cliente;
 import br.com.everton.dto.CategoriaDTO;
 import br.com.everton.repositories.CategoriaRepository;
 import br.com.everton.services.exceptions.DataIntegrityException;
@@ -33,8 +34,9 @@ public class CategoriaService {
 	}
 	
 	public Categoria update(Categoria obj) {
-		find(obj.getId());
-		return repo.save(obj);
+		Categoria newObj = find(obj.getId());
+		updateData(newObj, obj);
+		return repo.save(newObj);
 	}
 	
 	public void delete(Integer id) {
@@ -58,6 +60,10 @@ public class CategoriaService {
 	
 	public Categoria fromDTO(CategoriaDTO objDto) {
 		return new Categoria(objDto.getId(), objDto.getNome());
+	}
+	
+	private void updateData(Categoria newObj, Categoria obj) {
+		obj.setNome(obj.getNome());
 	}
 
 }
