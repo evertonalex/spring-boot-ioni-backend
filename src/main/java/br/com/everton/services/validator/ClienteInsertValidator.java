@@ -6,12 +6,20 @@ import java.util.List;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import br.com.everton.domain.Cliente;
 import br.com.everton.domain.enums.TipoCliente;
 import br.com.everton.dto.ClienteNewDTO;
+import br.com.everton.repositories.ClienteRepository;
 import br.com.everton.resources.exception.FieldMessage;
 import br.com.everton.services.validator.utils.BR;
 
 public class ClienteInsertValidator implements ConstraintValidator<ClienteInsert, ClienteNewDTO> {
+	
+	@Autowired
+	private ClienteRepository repo;
+	
 	@Override
 	public void initialize(ClienteInsert ann) {
 	}
@@ -36,7 +44,17 @@ public class ClienteInsertValidator implements ConstraintValidator<ClienteInsert
 			list.add(new FieldMessage("cpfOuCnpj", "CNPJ inválido"));
 		}
 		
-		// inclua os testes aqui, inserindo erros na lista
+		System.out.println("EMAIL " + objDto.getEmail());
+		
+		Cliente aux = repo.findByEmail(objDto.getEmail());
+		
+		System.out.println("AUX" + aux);
+		
+		if(aux != null) {
+			System.out.println("EMAIL JA EXISTENTE");
+			list.add(new FieldMessage("email", "Email já existente"));
+		}
+		
 		for (FieldMessage e : list) {
 			context.disableDefaultConstraintViolation();
 			context.buildConstraintViolationWithTemplate(e.getMessage()).addPropertyNode(e.getFiledName())
