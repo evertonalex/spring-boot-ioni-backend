@@ -29,7 +29,7 @@ import br.com.everton.repositories.EstadoRepository;
 import br.com.everton.repositories.PagamentoRepository;
 import br.com.everton.repositories.PedidoRepository;
 import br.com.everton.repositories.ProdutoRepository;
-import br.com.everton.repositories.itemPedidoRepository;
+import br.com.everton.repositories.ItemPedidoRepository;
 
 @SpringBootApplication
 public class CursoMcApplication implements CommandLineRunner{
@@ -59,7 +59,7 @@ public class CursoMcApplication implements CommandLineRunner{
 	private PagamentoRepository pagamentoRepository;
 	
 	@Autowired
-	private itemPedidoRepository itemPedidoRepository;
+	private ItemPedidoRepository itemPedidoRepository;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(CursoMcApplication.class, args);

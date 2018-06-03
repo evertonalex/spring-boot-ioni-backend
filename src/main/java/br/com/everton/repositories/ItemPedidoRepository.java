@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import br.com.everton.domain.ItemPedido;
 
 @Repository
-public interface itemPedidoRepository extends JpaRepository<ItemPedido, Integer>{
+public interface ItemPedidoRepository extends JpaRepository<ItemPedido, Integer>{
 	
 }
