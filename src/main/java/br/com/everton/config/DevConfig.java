@@ -1,6 +1,8 @@
 package br.com.everton.config;
 
 import br.com.everton.services.DbService;
+import br.com.everton.services.EmailService;
+import br.com.everton.services.MockEmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -26,5 +28,10 @@ public class DevConfig {
         }
         dbService.instantiateTestDatabse();
         return true;
+    }
+
+    @Bean
+    public EmailService emailService(){
+        return new MockEmailService();
     }
 }
