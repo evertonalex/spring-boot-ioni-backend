@@ -5,6 +5,7 @@ import br.com.everton.domain.enums.EstadoPagamento;
 import br.com.everton.domain.enums.TipoCliente;
 import br.com.everton.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.text.ParseException;
@@ -13,6 +14,9 @@ import java.util.Arrays;
 
 @Service
 public class DbService {
+
+    @Autowired
+    private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Autowired
     private CategoriaRepository categoriaRepository;
@@ -102,7 +106,7 @@ public class DbService {
         estadoRepository.saveAll(Arrays.asList(est1, est2));
         cidadeRepository.saveAll(Arrays.asList(c1, c2, c3));
 
-        Cliente cli1 = new Cliente(null, "Maria Silva", "maria@email.com", "4334290000", TipoCliente.PESSOAFISICA);
+        Cliente cli1 = new Cliente(null, "Maria Silva", "maria@email.com", "4334290000", TipoCliente.PESSOAFISICA, bCryptPasswordEncoder.encode("123"));
         cli1.getTelefones().addAll(Arrays.asList("123456", "7891347"));
 
         Endereco e1 = new Endereco(null, "Rua nome da rua", "123", "casa", "bairro", "86741147", cli1, c1);
