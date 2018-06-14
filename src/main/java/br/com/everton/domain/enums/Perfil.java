@@ -2,7 +2,7 @@ package br.com.everton.domain.enums;
 
 public enum Perfil {
 	ADMIN (1, "ROLE_ADMIN"),
-	CLIENTE(2, "ROLE_CLIENTE"),
+	CLIENTE (2, "ROLE_CLIENTE");
 
 
 	private int cod;

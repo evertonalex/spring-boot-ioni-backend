@@ -2,6 +2,7 @@ package br.com.everton.services;
 
 import br.com.everton.domain.*;
 import br.com.everton.domain.enums.EstadoPagamento;
+import br.com.everton.domain.enums.Perfil;
 import br.com.everton.domain.enums.TipoCliente;
 import br.com.everton.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -109,12 +110,18 @@ public class DbService {
         Cliente cli1 = new Cliente(null, "Maria Silva", "maria@email.com", "4334290000", TipoCliente.PESSOAFISICA, bCryptPasswordEncoder.encode("123"));
         cli1.getTelefones().addAll(Arrays.asList("123456", "7891347"));
 
+        Cliente cli2 = new Cliente(null, "Ana Costa", "testes@email.com", "4334290002", TipoCliente.PESSOAFISICA, bCryptPasswordEncoder.encode("123"));
+        cli2.getTelefones().addAll(Arrays.asList("123457", "7891347"));
+        cli2.addPerfil(Perfil.ADMIN);
+
         Endereco e1 = new Endereco(null, "Rua nome da rua", "123", "casa", "bairro", "86741147", cli1, c1);
         Endereco e2 = new Endereco(null, "Av avenida 1", "124", "casa", "centro", "86741147", cli1, c2);
+        Endereco e3 = new Endereco(null, "Av avenida 2", "456", "casa", "centro", "86741148", cli2, c2);
 
         cli1.getEnderecos().addAll(Arrays.asList(e1, e2));
+        cli2.getEnderecos().addAll(Arrays.asList(e1, e3));
 
-        clienteRepository.saveAll(Arrays.asList(cli1));
+        clienteRepository.saveAll(Arrays.asList(cli1, cli2));
         enderecoRepository.saveAll(Arrays.asList(e1, e2));
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
