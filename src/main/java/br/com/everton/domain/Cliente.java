@@ -6,15 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.CollectionTable;
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 import org.hibernate.annotations.Cascade;
 
@@ -23,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import br.com.everton.domain.enums.TipoCliente;
 
 @Entity
-public class Cliente implements Serializable{
+public class  Cliente implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -42,6 +34,10 @@ public class Cliente implements Serializable{
 	@ElementCollection
 	@CollectionTable(name="TELEFONE")
 	private Set<String> telefones = new HashSet<>();
+
+	@ElementCollection(fetch= FetchType.EAGER) //garantir que os perfis seje buscado juntos
+	@CollectionTable(name = "PERFIS")
+	private Set<Integer> perfis = new HashSet<>();
 	
 	@JsonIgnore
 	@OneToMany(mappedBy="cliente")
