@@ -3,17 +3,17 @@ package br.com.everton.services;
 import java.util.Date;
 import java.util.Optional;
 
-import br.com.everton.domain.ItemPedido;
-import br.com.everton.domain.PagamentoComBoleto;
+import br.com.everton.domain.*;
 import br.com.everton.domain.enums.EstadoPagamento;
-import br.com.everton.repositories.ItemPedidoRepository;
-import br.com.everton.repositories.PagamentoRepository;
-import br.com.everton.repositories.ProdutoRepository;
+import br.com.everton.repositories.*;
+import br.com.everton.security.UserSS;
+import br.com.everton.services.exceptions.AutorizationException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import org.springframework.data.domain.Sort.Direction;
 
-import br.com.everton.domain.Pedido;
-import br.com.everton.repositories.PedidoRepository;
 import br.com.everton.services.exceptions.ObjectNotFoundException;
 
 @Service
@@ -39,6 +39,9 @@ public class PedidoService {
 
 	@Autowired
 	private EmailService emailService;
+
+	@Autowired
+	private ClienteRepository clienteRepository;
 
 	public Pedido find(Integer id) {
 		Optional<Pedido> obj = repo.findById(id);
@@ -71,6 +74,16 @@ public class PedidoService {
 		System.out.println(obj);
 		emailService.sendOrderConfirmationEmail(obj);
 		return obj;
+	}
+
+	public Page<Pedido> findPage(Integer page, Integer linesPerPage, String orderBy, String direction){
+		UserSS user = UserService.authenticated();
+		if(user == null){
+			throw new AutorizationException("Acesso negado!");
+		}
+		PageRequest pageRequest = PageRequest.of(page, linesPerPage, Direction.valueOf(direction), orderBy);
+		Cliente cliente =  clienteService.find(user.getId());
+		return repo.findByCliente(cliente, pageRequest);
 	}
 
 }
