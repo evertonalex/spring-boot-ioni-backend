@@ -3,7 +3,6 @@ package br.com.everton;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
-import br.com.everton.services.S3Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -35,8 +34,6 @@ import br.com.everton.repositories.ItemPedidoRepository;
 @SpringBootApplication
 public class CursoMcApplication implements CommandLineRunner{
 
-	@Autowired
-	private S3Service s3Service;
 	
 	public static void main(String[] args) {
 
@@ -45,6 +42,7 @@ public class CursoMcApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		s3Service.uploadFile("C:\\Users\\everton_alex\\Desktop\\testeS3\\s3Teste.pdf");
+
+		
 	}
 }
