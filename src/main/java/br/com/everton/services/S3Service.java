@@ -1,5 +1,6 @@
 package br.com.everton.services;
 
+import br.com.everton.services.exceptions.FileException;
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.AmazonS3;
@@ -36,7 +37,7 @@ public class S3Service {
             String contentType = multipartFile.getContentType();
             return uploadFile(inputStream, fileName, contentType);
         }catch (IOException e){
-            throw new RuntimeException("Erro de IO " + e.getMessage());
+            throw new FileException("Erro de IO " + e.getMessage());
         }
     }
     public URI uploadFile(InputStream is,String fileName, String contentType){
@@ -49,7 +50,7 @@ public class S3Service {
             LOG.info("upload finalizado...");
             return s3client.getUrl(bucketName, fileName).toURI();
         } catch (URISyntaxException e) {
-            throw new RuntimeException("Erro ao converter URL para URL");
+            throw new FileException("Erro ao converter URL para URL");
         }
     }
 }
