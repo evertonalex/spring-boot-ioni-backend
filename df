@@ -1,0 +1,342 @@
+[33mcommit 9531751d2dc8907079819818f03026bf3841c104[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sat Jun 23 10:51:48 2018 -0300
+
+    salvando arquivo S3
+
+[33mcommit 3c91e15485d0f1411fcdd10163de7fe958fdd755[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sat Jun 23 10:49:54 2018 -0300
+
+    git status
+
+[33mcommit e14f865f4565a816d8335a2a98b33b9b9bc2e16a[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 17 10:02:37 2018 -0300
+
+    esqueci a senha
+
+[33mcommit a6e279d5f397d15b327a1fa7dac9dffd9d101616[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sat Jun 16 17:15:14 2018 -0300
+
+    refresh token
+
+[33mcommit e747e1ea4b59210f5996c02384d344732ab5a0c2[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sat Jun 16 17:08:30 2018 -0300
+
+    restricao de conteudo, cliente so pode ver seus pedidos
+
+[33mcommit 59d4e3b53d5f4877283bac07f949135cceba1e4a[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sat Jun 16 16:53:29 2018 -0300
+
+    clientes recupera ele mesmo
+
+[33mcommit 249f97be87663eeb7831d47663655e0b3d3be0eb[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sat Jun 16 16:29:57 2018 -0300
+
+    autorizando endpoints para perfis especificos
+
+[33mcommit 9aa664a54824cb9221a378b1121a08c66ae45a3a[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sat Jun 16 16:07:39 2018 -0300
+
+    autorizacao JWT
+
+[33mcommit 3afe4eed8272dc4ef9402102f2b5ac264359d3fc[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sat Jun 16 15:13:44 2018 -0300
+
+    autenticacao de usuario JWT
+
+[33mcommit d03dc172604ac8fc76d48ffc847e5e3b30093eeb[m
+Author: ¨Everton <¨evertonalexweb@gmail.com¨>
+Date:   Thu Jun 14 13:29:16 2018 -0300
+
+    ¨salvando_perfil_cliente¨
+
+[33mcommit b82a9211ac12e8228f92733a281c794164626eab[m
+Merge: c0a8ec3 e047f95
+Author: ¨Everton <¨evertonalexweb@gmail.com¨>
+Date:   Thu Jun 14 13:06:50 2018 -0300
+
+    Merge branch 'master' of https://github.com/evertonalex/spring-boot-ioni-backend
+
+[33mcommit c0a8ec348d463f47e2982892852fb5b801238943[m
+Author: ¨Everton <¨evertonalexweb@gmail.com¨>
+Date:   Thu Jun 14 13:06:44 2018 -0300
+
+    ¨merge¨
+
+[33mcommit e047f951b8c92c553fe188f34f2f899d5539b624[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Tue Jun 12 21:02:44 2018 -0300
+
+    adicionando senha a cliente
+
+[33mcommit dda1abefe4c9d9edc0c9ed5728c7f40c25b80489[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Tue Jun 12 20:45:11 2018 -0300
+
+    config inicial springSecurity
+
+[33mcommit 1a4b4b1cf30830d5a660fafc409f6cb77ce549dd[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 10 14:43:19 2018 -0300
+
+    envio de email SMTP
+
+[33mcommit ceda0eb5a918929c37f542c7e27c950c40de812a[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 10 14:09:58 2018 -0300
+
+    git MockEmailService com padroes strategy
+
+[33mcommit 6085c327b1546bc12284fd35805e9b298cb2c3fc[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 10 11:15:22 2018 -0300
+
+    to string de pedido MOEDA E DATA
+
+[33mcommit 95a826d5423236e2bd80642b3e3525306f511145[m[33m ([m[1;31mheroku/master[m[33m)[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 10 10:37:00 2018 -0300
+
+    heroku agora vai driver mysql RUNTIME
+
+[33mcommit 0393b62e1df2f8dbe4b49060841a5347abed3daa[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 10 10:33:21 2018 -0300
+
+    heroku agora vai OK
+
+[33mcommit 922d4ec777f4e1b46a3c60d4630b5fc364f6dfcf[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 10 10:20:14 2018 -0300
+
+    heroku agora vai 4
+
+[33mcommit 19bd094497c8d629e41f19e537b5635162eb97b4[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 10 10:08:10 2018 -0300
+
+    agora vai heroku 2
+
+[33mcommit f3b85c6dc65ad9c37a4649c448bfe1315ce357fd[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 10 10:06:21 2018 -0300
+
+    agora vai heroku
+
+[33mcommit cd4894f1843e9ba9ee72b73b235de8a67454839c[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 10 10:02:59 2018 -0300
+
+    producao application heroku
+
+[33mcommit a124e63f21bf2a20d738a98a69e6bd73539fd1b4[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 10 09:52:51 2018 -0300
+
+    configuracao envio projeto para producao
+
+[33mcommit cbbb9ccb987c024b454e1bab4258273732ba2ba6[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sat Jun 9 14:23:39 2018 -0300
+
+    profile desenvolvimento
+
+[33mcommit d3906c2431f47bd1c3527914b507a819980a8ce5[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sat Jun 9 13:59:06 2018 -0300
+
+    profile test
+
+[33mcommit c22a0c09931734ebb217b754609843c64e1a3cbe[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 3 16:35:21 2018 -0300
+
+    inserindo PEDIDO
+
+[33mcommit 425959cb1c328bf9eeb72a3be7697045b718c3ed[m
+Author: EvertonAlex <evertonalexweb@gmail.com>
+Date:   Sun Jun 3 15:21:11 2018 -0300
+
+    subTotal e total do Pedido
+
+[33mcommit 5b60683a039977d80caee0a932f14bec3d23238c[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Thu May 31 16:25:57 2018 -0300
+
+    busca de produtos por nome e categorias 2
+
+[33mcommit 3b38c141e75685f6ebb294991d39b09562d8886f[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Thu May 31 16:12:12 2018 -0300
+
+    busca de produtos por nome e categorias
+
+[33mcommit f5edf010688a738641af228142171cca49521557[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Thu May 31 13:55:06 2018 -0300
+
+    email nao repetido na ataulizacao do cliente
+
+[33mcommit 7d7baed2b61fe8dcbbfb39e2d8a30999e0f52034[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Thu May 31 12:23:15 2018 -0300
+
+    validacao email unico personalizada
+
+[33mcommit 14b1e61b663c52676bc5791531a3f2cefe301d1d[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Thu May 31 11:46:59 2018 -0300
+
+    validacao CPF ou CNPJ com @anotacao personalizada
+
+[33mcommit 5fad44e9b5f173a27748a5e05bd455b8507f8776[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Thu May 31 11:04:19 2018 -0300
+
+    delete com CASCADE CLIENTE
+
+[33mcommit e8c0117f8df2263e412fbdc1ca85c7aaab599eda[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Thu May 31 10:59:53 2018 -0300
+
+    inserindo cliente com POST
+
+[33mcommit 56520e8b9b4b9c33c4b151f338de46e9596f828b[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Thu May 31 10:00:34 2018 -0300
+
+    update categoria service construtor pagamento
+
+[33mcommit d60bb0c9af42ffdfec45277c5322f427fe816564[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Thu May 31 09:48:32 2018 -0300
+
+    PUT DELETE GET CLIENTE
+
+[33mcommit 76a831617079cd08ab3187ac055ce03ec7effbe3[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Thu May 31 09:18:09 2018 -0300
+
+    personalizando o erro retorno validacao
+
+[33mcommit 97337dd946bfb450b2b98229d5d79ff5ef8d647f[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sun May 27 15:11:26 2018 -0300
+
+    validacao sintatica com bean validation
+
+[33mcommit d747458f262d9093b8d3f1aa6f9db2743432ac5c[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sun May 27 14:54:23 2018 -0300
+
+    paginacao com parametros opcionais na requisicao
+
+[33mcommit d95473f0f6f1fa63a92971d8909aa4d7affdc8e8[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sun May 27 11:12:02 2018 -0300
+
+    listando categorias com DTO
+
+[33mcommit e22f4d31edbd1d10d64abd7e0f857f8af665df0c[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sun May 27 10:57:25 2018 -0300
+
+    deletando gategoria validacao integridade referencial
+
+[33mcommit 3219e398bdcf0e34213c3f9bc0e2d5d4e467a0e3[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sun May 27 10:36:15 2018 -0300
+
+    endpoint update categoria
+
+[33mcommit fd51fe3536496c566c68c01ff14808c85180344b[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sun May 27 09:49:22 2018 -0300
+
+    inserirndo categoria por post
+
+[33mcommit 6ca8dd7e89ac7611aa9ac3311d5ec0aabb6bf3cf[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sat May 26 15:37:22 2018 -0300
+
+    atualziacao somente @JsonIgonore
+
+[33mcommit 404a3322e023040bed0b198a24cf93cc96fa9e4e[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sat May 26 15:31:48 2018 -0300
+
+    endpoit pedido finalizado
+
+[33mcommit 6ba5558455663ef62c6557e7d784e9fce8a7429e[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sat May 26 14:39:27 2018 -0300
+
+    itempedido e ItemPedidoPK
+
+[33mcommit 9946e280d86d7751c68da1452337d61b3c842df0[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sat May 26 13:43:33 2018 -0300
+
+    Pedido, estado pagamento e estado pagamento
+
+[33mcommit 7d34a0bba7bb9c1a09b4ca4236e83992b9c7b8dd[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sun May 13 17:04:37 2018 -0300
+
+    enum, cliente, telefones, endereco
+
+[33mcommit 0624902215dd401f81a53ff5ce0485e9427733d1[m
+Author: evertonalex <evertonalexweb@gmail.com>
+Date:   Sun May 13 10:44:35 2018 -0300
+
+    cidade e estado
+
+[33mcommit afe756a936b994b571b90c8afb0e3cb774a940e4[m
+Author: everton_alex <evertonalexweb@gmail.com>
+Date:   Sat May 12 18:58:42 2018 -0300
+
+    tratamento execoes REST referencia ciclica
+
+[33mcommit db53659295a1e3ffcbd07479147ca415a6f8eea9[m
+Author: everton_alex <evertonalexweb@gmail.com>
+Date:   Sat May 12 18:13:42 2018 -0300
+
+    produto associacao muitos para muitos
+
+[33mcommit ad9b5cd43747c0ac4a2c189d1201a64ea3523d72[m
+Author: everton_alex <evertonalexweb@gmail.com>
+Date:   Sat May 12 16:35:39 2018 -0300
+
+    configurado com mysql, rest com consulta
+
+[33mcommit 89ea4e059c7463231023602a10bffbda1ed5da4b[m
+Author: everton_alex <evertonalexweb@gmail.com>
+Date:   Sat May 12 15:35:50 2018 -0300
+
+    banco H2, config pom e application.properties
+
+[33mcommit fa0f8d9bbf0c8bcdcb3200cc03f5b37f31fdc909[m
+Author: everton_alex <evertonalexweb@gmail.com>
+Date:   Sat May 12 15:20:34 2018 -0300
+
+    rest JSON
+
+[33mcommit 8704eeb2f75e4f3d3dea1c14c28056a7971c9622[m
+Author: everton_alex <evertonalexweb@gmail.com>
+Date:   Sat May 12 15:02:51 2018 -0300
+
+    testendo rest
+
+[33mcommit a9dd1542a7f478e9440d40f9b377c39a371b6764[m
+Author: everton_alex <evertonalexweb@gmail.com>
+Date:   Sat May 12 14:50:55 2018 -0300
+
+    primeiro versao curso udemy spring boot ionic
