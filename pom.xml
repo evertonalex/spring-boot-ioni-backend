@@ -85,7 +85,6 @@
 			<version>0.7.0</version>
 		</dependency>
 
-
 		<!-- sdk s3 -->
 		<dependency>
 			<groupId>com.amazonaws</groupId>
@@ -99,6 +98,7 @@
 			<artifactId>commons-io</artifactId>
 			<version>LATEST</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>

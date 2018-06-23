@@ -1,5 +1,6 @@
 package br.com.everton.services;
 
+import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
@@ -27,6 +28,7 @@ import br.com.everton.repositories.ClienteRepository;
 import br.com.everton.repositories.EnderecoRepository;
 import br.com.everton.services.exceptions.DataIntegrityException;
 import br.com.everton.services.exceptions.ObjectNotFoundException;
+import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class ClienteService {
@@ -42,6 +44,9 @@ public class ClienteService {
 	
 	@Autowired
 	private EnderecoRepository enderecoRepository;
+
+	@Autowired
+	private S3Service s3Service;
 
 	public Cliente find(Integer id) {
 
@@ -115,6 +120,10 @@ public class ClienteService {
 	private void updateData(Cliente newObj, Cliente obj) {
 		obj.setNome(obj.getNome());
 		newObj.setEmail(obj.getEmail());
+	}
+
+	public URI uploadProfilePicture(MultipartFile multipartFile){
+		return s3Service.uploadFile(multipartFile);
 	}
 
 }
