@@ -30,10 +30,10 @@ public class ProdConfig {
         return true;
     }
 
-//    @Bean
-//    public EmailService emailService(){
-//        return new SmtpEmailService();
-//    }
+    @Bean
+    public EmailService emailService(){
+        return new SmtpEmailService();
+    }
 
 //    @Bean
 //    public EmailService emailService(){
